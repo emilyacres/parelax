@@ -81,8 +81,8 @@ $color-white-translucent: rgba(255, 255, 255, 0.3);
   text-align: left;
 }
 
-.form-group {
-  padding-left: 1.2em;
+#inputBG {
+  margin: 1em 1em 0 .5em;
 }
 
 #complete {
@@ -90,8 +90,22 @@ $color-white-translucent: rgba(255, 255, 255, 0.3);
   font-size: 3em;
 }
 
+.number {
+  font-size: 3em;
+}
+
 #radios {
+  margin-top: 5em;
   margin-left: 3em;
+}
+
+.left-side {
+
+}
+
+.right-side {
+  margin-left: 2.1em;
+  padding-left: 1em;
 }
 
 #background-check {
@@ -100,32 +114,42 @@ $color-white-translucent: rgba(255, 255, 255, 0.3);
 }
 
 #submit {
+  margin-top: 3em;
   text-align: right;
   color: #9E7CA4;
-  margin-left: 51.3em;
+  margin-left: -10%;
+  padding: .5em 1em;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  margin-bottom: 2em;
 }
 
 #submit:hover {
   background-image: url('/img/btn-bg.gif');
+  background-repeat: no-repeat;
+  background-position: center;
   border-color: white;
 }
 
 #add {
   text-align: right;
   color: #9E7CA4;
-  margin-left: 58.3em;
-  margin-bottom: 1.5em;
-  margin-top: -.5em;
+  position: absolute;
+  right: 5.7em;
+  margin-top: 0em;
 }
 
 #add:hover {
   background-image: url('/img/btn-bg.gif');
   border-color: white;
+    background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* RESULTS */
 
 #code {
+  z-index: 1000;
   position: fixed;
   top: 50px;
   right: 50px;
@@ -135,4 +159,24 @@ $color-white-translucent: rgba(255, 255, 255, 0.3);
 #code:hover {
   background-image: url('/img/btn-bg.gif');
   border-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#code-box {
+  background-image: url('/img/pinksky.jpg');
+  margin-top: 50px;
+  z-index: 100;
+  padding: 2em 3em;
+  color: #9E7CA4 !important;
+}
+
+.inner-code {
+  padding: 2em 2em;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.your-code {
+  text-align: right;
+  margin-bottom: -.3em;
 }
