@@ -4,179 +4,547 @@
 $color-white-translucent: rgba(255, 255, 255, 0.3);
 
 
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Raleway', sans-serif;
-  color: white;
-}
 
-.italic {
-  font-style: italic;
-}
+@media (min-width: 1451px) and (max-width: 1700px) {
 
-.bold {
-  font-weight: bold;
-}
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: blue;
+  }
 
-.fancy-type {
-  font-family: 'Raleway', sans-serif;
-  color: white;
-}
+  .italic {
+    font-style: italic;
+  }
 
-.center {
-  text-align: center;
-}
+  .bold {
+    font-weight: bold;
+  }
 
-.caps {
-  text-transform: uppercase;
-}
+  .fancy-type {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+  }
 
-.fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-}
+  .center {
+    text-align: center;
+  }
 
-/* LANDING PAGE */
+  .caps {
+    text-transform: uppercase;
+  }
 
-#landing-bg {
-  width: 100%;
-  z-index: -100;
-  position: fixed;
-}
+  .fullscreen-bg__video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+  }
 
-#everyone {
-  font-size: 2.85em;
-  opacity: 0;
-  margin-bottom: 30px;
-  text-align: center;
-  letter-spacing: .61em,
-}
+  /* LANDING PAGE */
 
-#parelax-logo {
-  font-size: 3.4em;
-  opacity: 0;
-  text-align: center;
-}
+  #landing-bg {
+    width: 100%;
+    z-index: -100;
+    position: fixed;
+  }
 
-#logo-border {
-  border: 5px white;
-  padding: 3.05em;
-  margin-top: 15%;
-}
+  #everyone {
+    font-size: 2.85em;
+    opacity: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: .61em,
+  }
 
-#logo-border:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
+  #parelax-logo {
+    font-size: 3.4em;
+    opacity: 0;
+    text-align: center;
+    margin-left: 40px;
+  }
 
-/* READY FORM */
+  #logo-border {
+    border: 5px white;
+    padding: 3.05em;
+    margin-top: 15%;
+  }
 
-#ready-form {
-  margin-top: 3em;
-  background-color: $color-white-translucent;
-  padding: 2em 3em;
-  text-align: left;
-}
+  #logo-border:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 
-#inputBG {
-  margin: 1em 1em 0 .5em;
-}
+  /* READY FORM */
 
-#complete {
-  text-align: right;
-  font-size: 3em;
-}
+  #ready-form {
+    margin-top: 3em;
+    background-color: $color-white-translucent;
+    padding: 2em 3em;
+    text-align: left;
+  }
 
-.number {
-  font-size: 3em;
-}
+  #inputBG {
+    margin: 1em 1em 0 .5em;
+  }
 
-#radios {
-  margin-top: 5em;
-  margin-left: 3em;
-}
+  #complete {
+    text-align: right;
+    font-size: 3em;
+  }
 
-.left-side {
+  .number {
+    font-size: 3em;
+  }
 
-}
+  #radios {
+    margin-top: 5em;
+    margin-left: 3em;
+  }
 
-.right-side {
-  margin-left: 2.1em;
-  padding-left: 1em;
-}
+  .left-side {
 
-#background-check {
-  margin-top: 60px !important;
-  margin-bottom: 0;
-}
+  }
 
-#submit {
-  margin-top: 3em;
-  text-align: right;
-  color: #9E7CA4;
-  margin-left: -10%;
-  padding: .5em 1em;
-  font-size: 1.5em;
-  letter-spacing: .1em;
-  margin-bottom: 2em;
-}
+  .right-side {
+    margin-left: 2.1em;
+    padding-left: 1em;
+  }
 
-#submit:hover {
-  background-image: url('/img/btn-bg.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: white;
-}
+  #background-check {
+    margin-top: 60px !important;
+    margin-bottom: 0;
+  }
 
-#add {
-  text-align: right;
-  color: #9E7CA4;
-  position: absolute;
-  right: 5.7em;
-  margin-top: 0em;
-}
+  #submit {
+    margin-top: 3em;
+    text-align: right;
+    color: #9E7CA4;
+    margin-left: -10%;
+    padding: .5em 1em;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    margin-bottom: 2em;
+  }
 
-#add:hover {
-  background-image: url('/img/btn-bg.gif');
-  border-color: white;
+  #submit:hover {
+    background-image: url('/img/btn-bg.gif');
     background-repeat: no-repeat;
-  background-position: center;
+    background-position: center;
+    border-color: white;
+  }
+
+  #add {
+    text-align: right;
+    color: #9E7CA4;
+    position: absolute;
+    right: 6.5em;
+    margin-top: 0em;
+  }
+
+  #add:hover {
+    background-image: url('/img/btn-bg.gif');
+    border-color: white;
+      background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* RESULTS */
+
+  #code {
+    z-index: 1000;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    color: #9E7CA4;
+  }
+
+  #code:hover {
+    background-image: url('/img/btn-bg.gif');
+    border-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #code-box {
+    background-image: url('/img/pinksky.jpg');
+    margin-top: 50px;
+    z-index: 100;
+    padding: 2em 3em;
+    color: #9E7CA4 !important;
+  }
+
+  .inner-code {
+    padding: 2em 2em;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .your-code {
+    text-align: right;
+    margin-bottom: -.3em;
+  }
+
 }
 
-/* RESULTS */
+@media (min-width: 1701px) {
 
-#code {
-  z-index: 1000;
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  color: #9E7CA4;
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: red;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .fancy-type {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .caps {
+    text-transform: uppercase;
+  }
+
+  .fullscreen-bg__video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+  }
+
+  /* LANDING PAGE */
+
+  #landing-bg {
+    width: 100%;
+    z-index: -100;
+    position: fixed;
+  }
+
+  #everyone {
+    font-size: 2.85em;
+    opacity: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: .61em,
+  }
+
+  #parelax-logo {
+    font-size: 3.4em;
+    opacity: 0;
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  #logo-border {
+    border: 5px white;
+    padding: 3.05em;
+    margin-top: 15%;
+  }
+
+  #logo-border:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* READY FORM */
+
+  #ready-form {
+    margin-top: 3em;
+    background-color: $color-white-translucent;
+    padding: 2em 3em;
+    text-align: left;
+  }
+
+  #inputBG {
+    margin: 1em 1em 0 .5em;
+  }
+
+  #complete {
+    text-align: right;
+    font-size: 3em;
+  }
+
+  .number {
+    font-size: 3em;
+  }
+
+  #radios {
+    margin-top: 5em;
+    margin-left: 3em;
+  }
+
+  .left-side {
+
+  }
+
+  .right-side {
+    margin-left: 2.1em;
+    padding-left: 1em;
+  }
+
+  #background-check {
+    margin-top: 60px !important;
+    margin-bottom: 0;
+  }
+
+  #submit {
+    margin-top: 3em;
+    text-align: right;
+    color: #9E7CA4;
+    margin-left: -10%;
+    padding: .5em 1em;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    margin-bottom: 2em;
+  }
+
+  #submit:hover {
+    background-image: url('/img/btn-bg.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: white;
+  }
+
+  #add {
+    text-align: right;
+    color: #9E7CA4;
+    position: absolute;
+    right: 10em;
+    margin-top: 0em;
+  }
+
+  #add:hover {
+    background-image: url('/img/btn-bg.gif');
+    border-color: white;
+      background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* RESULTS */
+
+  #code {
+    z-index: 1000;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    color: #9E7CA4;
+  }
+
+  #code:hover {
+    background-image: url('/img/btn-bg.gif');
+    border-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #code-box {
+    background-image: url('/img/pinksky.jpg');
+    margin-top: 50px;
+    z-index: 100;
+    padding: 2em 3em;
+    color: #9E7CA4 !important;
+  }
+
+  .inner-code {
+    padding: 2em 2em;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .your-code {
+    text-align: right;
+    margin-bottom: -.3em;
+  }
+
 }
 
-#code:hover {
-  background-image: url('/img/btn-bg.gif');
-  border-color: white;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-#code-box {
-  background-image: url('/img/pinksky.jpg');
-  margin-top: 50px;
-  z-index: 100;
-  padding: 2em 3em;
-  color: #9E7CA4 !important;
-}
 
-.inner-code {
-  padding: 2em 2em;
-  background-color: rgba(255, 255, 255, 0.2) !important;
-}
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+  }
 
-.your-code {
-  text-align: right;
-  margin-bottom: -.3em;
-}
+  .italic {
+    font-style: italic;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .fancy-type {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .caps {
+    text-transform: uppercase;
+  }
+
+  .fullscreen-bg__video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+  }
+
+  /* LANDING PAGE */
+
+  #landing-bg {
+    width: 100%;
+    z-index: -100;
+    position: fixed;
+  }
+
+  #everyone {
+    font-size: 2.47em;
+    opacity: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: .61em,
+  }
+
+  #parelax-logo {
+    font-size: 3em;
+    opacity: 0;
+    text-align: center;
+  }
+
+  #logo-border {
+    border: 5px white;
+    padding: 3.05em;
+    margin-top: 15%;
+  }
+
+  #logo-border:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* READY FORM */
+
+  #ready-form {
+    margin-top: 3em;
+    background-color: $color-white-translucent;
+    padding: 2em 3em;
+    text-align: left;
+  }
+
+  #inputBG {
+    margin: 1em 1em 0 .5em;
+  }
+
+  #complete {
+    text-align: right;
+    font-size: 3em;
+  }
+
+  .number {
+    font-size: 3em;
+  }
+
+  #radios {
+    margin-top: 5em;
+    margin-left: 3em;
+  }
+
+  .left-side {
+
+  }
+
+  .right-side {
+    margin-left: 2.1em;
+    padding-left: 1em;
+  }
+
+  #background-check {
+    margin-top: 60px !important;
+    margin-bottom: 0;
+  }
+
+  #submit {
+    margin-top: 3em;
+    text-align: right;
+    color: #9E7CA4;
+    margin-left: -10%;
+    padding: .5em 1em;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    margin-bottom: 2em;
+  }
+
+  #submit:hover {
+    background-image: url('/img/btn-bg.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: white;
+  }
+
+  #add {
+    text-align: right;
+    color: #9E7CA4;
+    position: absolute;
+    right: 5.7em;
+    margin-top: 0em;
+  }
+
+  #add:hover {
+    background-image: url('/img/btn-bg.gif');
+    border-color: white;
+      background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* RESULTS */
+
+  #code {
+    z-index: 1000;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    color: #9E7CA4;
+  }
+
+  #code:hover {
+    background-image: url('/img/btn-bg.gif');
+    border-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #code-box {
+    background-image: url('/img/pinksky.jpg');
+    margin-top: 50px;
+    z-index: 100;
+    padding: 2em 3em;
+    color: #9E7CA4 !important;
+  }
+
+  .inner-code {
+    padding: 2em 2em;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .your-code {
+    text-align: right;
+    margin-bottom: -.3em;
+  }
+
